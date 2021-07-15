@@ -35,3 +35,7 @@ _Run the script using python3 (can be also executed with ```sh python antibots.p
    
    --> By using the number 2 you'll also remove deleted accounts, users without a profile picture and suspicious accounts (DC1, DC2, DC3, DC5, Deleted Accounts, Users without a propic)
 
+
+# Important Notes
+
+**Telegram has a limit for channels which allows you to retrieve only 200 MEMBERS each time you do the start command. If your channel has more than 200 members repeat the command when a removal is complete.**
