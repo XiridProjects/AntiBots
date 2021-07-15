@@ -68,12 +68,15 @@ async def removal(client: Client, message: Message) -> bool:
             for x in voips:
                 await client.kick_chat_member(channelid, x)
             await client.send_message(message.chat.id, f"Successfully kicked all VoIPs.")
+            voips.clear()
         elif message.command[1] == "2":
             for x in voips:
                 await client.kick_chat_member(channelid, x)
             for y in suspicious:
                 await client.kick_chat_member(channelid, y)
             await client.send_message(message.chat.id, f"Successfully kicked all VoIPs and Suspicious Accounts.")
+            voips.clear()
+            suspicious.clear()
     except FloodWait as e:
         await client.send_message(message.chat.id, f"Bot is now in a floodwait of {e.x} seconds.")
         await asyncio.sleep(e.x)
