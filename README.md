@@ -1,4 +1,4 @@
-# AntiBots [[DISCONTINUED]]
+# AntiBots [DISCONTINUED]
 Remove botted VoIPs and deleted accounts from your channel automatically
 
 # Installation
